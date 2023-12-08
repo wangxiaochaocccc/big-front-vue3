@@ -7,3 +7,8 @@ import HelloWorld from '../components/HelloWorld.vue'
     <HelloWorld />
   </main>
 </template>
+<style lang="scss" scoped>
+main {
+  color: red;
+}
+</style>
