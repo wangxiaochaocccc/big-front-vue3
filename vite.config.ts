@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [
     VueRouter({}), //一定要在vue()之前
     vue(),
-    vueJsx(),
+    vueJsx()
   ],
   resolve: {
     alias: {
