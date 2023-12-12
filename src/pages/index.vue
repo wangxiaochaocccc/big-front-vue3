@@ -15,3 +15,7 @@ const { x, y } = useMouse()
 <style lang='scss' scoped>
 
 </style>
+<route lang="yaml">
+    meta:
+      layout: default
+</route>

@@ -8,6 +8,7 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
+import Layouts from 'vite-plugin-vue-layouts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -33,6 +34,10 @@ export default defineConfig({
     Components({
       directoryAsNamespace: true, //允许拼接文件名
       collapseSamePrefixes:true
+    }),
+    Layouts({
+      layoutsDirs: 'src/layout',
+      defaultLayout: 'default'
     })
   ],
   resolve: {

@@ -103,6 +103,9 @@ devDependencies:
   vite-plugin-pages:
     specifier: ^0.32.0
     version: 0.32.0(vite@5.0.7)
+  vite-plugin-vue-layouts:
+    specifier: ^0.9.1
+    version: registry.npmmirror.com/vite-plugin-vue-layouts@0.9.1(vite@5.0.7)(vue-router@4.2.5)(vue@3.3.11)
   vitest:
     specifier: ^1.0.1
     version: 1.0.4(@types/node@18.19.3)(jsdom@23.0.1)(sass@1.69.5)
@@ -6068,6 +6071,25 @@ packages:
       chokidar: registry.npmmirror.com/chokidar@3.5.3
       webpack-sources: registry.npmmirror.com/webpack-sources@3.2.3
       webpack-virtual-modules: registry.npmmirror.com/webpack-virtual-modules@0.6.1
+    dev: true
+
+  registry.npmmirror.com/vite-plugin-vue-layouts@0.9.1(vite@5.0.7)(vue-router@4.2.5)(vue@3.3.11):
+    resolution: {integrity: sha512-63ekxLgrs/hpqchAF6oDFZqdT3xl0p7wOHKkwIR+34jxStQmUiX70/2SchhHICMy7b8VFrY06SxpRVxyd2876A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vite-plugin-vue-layouts/-/vite-plugin-vue-layouts-0.9.1.tgz}
+    id: registry.npmmirror.com/vite-plugin-vue-layouts/0.9.1
+    name: vite-plugin-vue-layouts
+    version: 0.9.1
+    peerDependencies:
+      vite: ^4.0.0 || ^5.0.0
+      vue: ^3.2.4
+      vue-router: ^4.0.11
+    dependencies:
+      debug: registry.npmmirror.com/debug@4.3.4
+      fast-glob: registry.npmmirror.com/fast-glob@3.3.2
+      vite: 5.0.7(@types/node@18.19.3)(sass@1.69.5)
+      vue: 3.3.11(typescript@5.2.2)
+      vue-router: 4.2.5(vue@3.3.11)
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.npmmirror.com/vue-demi@0.14.6(vue@3.3.11):
