@@ -4,6 +4,8 @@
         <p>{{x}}</p>
         <p>{{y}}</p>
     </div>
+    <hello-world></hello-world>
+    <user-com/>
 </template>
 
 <script setup>

@@ -2,7 +2,7 @@
 </script>
 
 <template>
- <div>hell world! conpmonents</div>
+ <div>hell world! USerconpmonents</div>
 </template>
 
 <style scoped>
