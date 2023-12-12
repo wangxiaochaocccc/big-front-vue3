@@ -1,5 +1,5 @@
 <template>
-    <div class=''>index</div>
+    <div class='p-4'>index</div>
 </template>
 
 <script setup>
