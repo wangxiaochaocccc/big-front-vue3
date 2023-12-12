@@ -5,14 +5,29 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import VueRouter from 'unplugin-vue-router/vite'
 import UnoCSS from 'unocss/vite'
-
+import AutoImport from 'unplugin-auto-import/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     VueRouter({}), //一定要在vue()之前
     vue(),
     vueJsx(),
-    UnoCSS()
+    UnoCSS(),
+    AutoImport({
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+      ],
+      // global imports to register
+      imports: [
+        // presets
+        'vue',
+        VueRouterAutoImports,
+        '@vueuse/core'
+      ]
+    })
   ],
   resolve: {
     alias: {

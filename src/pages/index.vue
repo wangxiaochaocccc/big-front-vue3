@@ -1,9 +1,14 @@
 <template>
-    <div class='p-4'>index</div>
+    <div class='p-4'>
+        <p>{{msg}}</p>
+        <p>{{x}}</p>
+        <p>{{y}}</p>
+    </div>
 </template>
 
 <script setup>
-import {} from 'vue'
+const msg = ref('Hello World!')
+const { x, y } = useMouse()
 </script>
 <style lang='scss' scoped>
 
